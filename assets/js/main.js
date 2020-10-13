@@ -73,7 +73,7 @@ const maintainerSection = [
   {
     image: "assets/images/team/",
     name: "Shobhit Bhardwaj",
-    title: "",
+    title: "Developer",
     github: "",
     linkedin: "",
     imgclass: "image-2"
