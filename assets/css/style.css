@@ -1,0 +1,588 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: Montserrat;
+  scroll-behavior: smooth;
+  --col-deepblue: #4478e3;
+  position: relative;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+/* NAVBAR*/
+
+nav {
+  background-color: #7fcec5;
+  background-image: linear-gradient(315deg, #7fcec5 0%, #14557b 74%);
+  z-index: 2;
+}
+
+@media (min-width: 60rem) {
+  .nav1 {
+    height: 4em;
+  }
+}
+
+.nav-sign {
+  color: white;
+}
+
+.nav-top {
+  padding-right: -2em;
+}
+
+.nav-top {
+  margin-top: 1em;
+  font-size: 0.8em;
+}
+
+.res-toggle {
+  background-color: white !important;
+  outline: none;
+}
+
+.nav-wrapper {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+@media (max-width: 760px) {
+  .nav-top {
+    display: none;
+  }
+}
+
+.nav-wrapper a:hover,
+.sidenav a:hover {
+  text-decoration: none;
+}
+
+.nav-wrapper a {
+  font-weight: bold;
+}
+
+.sidenav-trigger {
+  margin-left: 0px !important;
+}
+
+@media (min-width: 60rem) {
+  .sidenav-trigger {
+    display: none;
+  }
+}
+
+.brand-logo img {
+  width: 180px;
+  float: right;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/*Home Section*/
+
+#title-heading {
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-size: 5.5rem;
+  text-align: center;
+  padding-top: 6rem;
+}
+
+.title-image {
+  width: 70%;
+  margin: 5% 20% 5% 20%;
+  padding: 15px;
+}
+
+.home-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #0f2027 #2c5364, #203a43);
+  background: linear-gradient(to right, #0f2027, #2c5364, #203a43);
+  overflow: hidden;
+}
+
+/* Wave Section */
+
+section .wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("wave-image/wave.png");
+  background-size: 1000px 100px;
+}
+
+section .wave.wave1 {
+  animation: animate 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+
+section .wave.wave2 {
+  animation: animate2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+
+section .wave.wave3 {
+  animation: animate 30s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15;
+}
+
+section .wave.wave4 {
+  animation: animate2 5s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -1000px;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 2rem;
+  color: #fff !important;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: semibold;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+}
+.button:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #05252c;
+  z-index: -2;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #0d739eab;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.button:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.button:hover:before {
+  width: 100%;
+}
+
+/*Responsive about section*/
+
+@media (min-width: 320px) and (max-width: 1210px) {
+  #title-heading {
+    font-size: 4rem;
+    padding-top: 4rem;
+  }
+}
+
+
+
+/*Footer*/
+
+footer {
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 150;
+  background-color: #7fcec5;
+  background-image: linear-gradient(315deg, #7fcec5 0%, #14557b 74%);
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+/*Team section*/
+/* .profile-container:hover */
+
+.container {
+  padding: 20px;
+}
+
+.profile-container {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  transition: 1s all ease;
+}
+
+.profile-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 1;
+  transition: all 0.5s ease-in;
+}
+
+.centeralign {
+  display: flex;
+  justify-content: center;
+}
+
+.image-1,
+.image-2 {
+  padding-bottom: 20px;
+}
+.image-1 .profile-container::before {
+  background: url("../images/team/sohail_saifi.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.image-2 .profile-container::before {
+  background: url("../images/team/") no-repeat center;
+  background-size: cover;
+}
+
+.profile-container:hover:before {
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+/* Profile Card Wrapper */
+.profile-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.profile-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(315deg, #b17fce 0%, #6f147b 74%);
+  transform: skew(30deg) translateX(125%);
+  opacity: 0.9;
+  transition: all 0.8s ease;
+}
+
+.profile-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(315deg, #7fcec5 0%, #14557b 74%);
+  transform: skew(30deg) translateX(-125%);
+  opacity: 0.9;
+  transition: all 0.8s ease;
+}
+
+.profile-container:hover .profile-wrapper::after {
+  transform: skew(30deg) translateX(125%);
+  background: linear-gradient(315deg, #ab7fce 0%, #52147b 74%);
+}
+
+.profile-container:hover .profile-wrapper::before {
+  transform: skew(30deg) translateX(-125%);
+  background: linear-gradient(315deg, #ce7fb0 0%, #7b1450 74%);
+}
+
+/* Profile Card */
+.profile-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem 10px;
+  position: relative;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.profile-container:hover .profile-card {
+  opacity: 1;
+  transition: all 0.6s ease;
+  transition-delay: 0.2s;
+}
+
+/* Profile Picture */
+.profile-card img {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 1rem 0;
+  border: 2px solid transparent;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to right, green, gold);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  position: relative;
+}
+
+.profile-card h4 {
+  line-height: 1.2;
+  font-size: 2rem;
+  color: #222;
+}
+.profile-card h5 {
+  color: #444;
+  font-size: 1.5rem;
+}
+
+.profile-card p {
+  line-height: 1.2;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Profile Icons */
+.profile-card .icons {
+  display: flex;
+  width: 40%;
+  justify-content: space-evenly;
+  font-size: 1.8rem;
+  margin: 15px 0;
+}
+
+.icons a {
+  color: #333;
+}
+
+.profile-card .icons a:hover {
+  background-image: linear-gradient(315deg, #7fcec5 0%, #14557b 74%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+
+
+/*About Section*/
+
+.about {
+  padding-top: 5em;
+}
+
+#about-intro p,
+#features p,
+#open-source p {
+  font-size: 1.4rem;
+  color: #333333;
+  text-align: center;
+}
+
+#features {
+  margin: auto 5%;
+}
+
+.feature-div {
+  width: 80%;
+}
+
+#page-image {
+  width: 40%;
+}
+
+#font-image,
+#download-image {
+  width: 55%;
+}
+
+#typing-image {
+  width: 50%;
+}
+
+#open-source-image {
+  width: 50%;
+  margin: auto !important;
+  display: block;
+}
+
+#open-source p {
+  color: #4e89ae;
+  font-weight: bold;
+}
+
+.enhanced {
+  font-style: italic;
+  font-weight: bold;
+}
+
+#about-intro h2,
+#features h3 {
+  color: #4e89ae;
+  text-align: center;
+  font-size: 2.5rem;;
+}
+
+#features h3 {
+  color: #4e89ae;
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  .feature-div {
+    margin: 60px auto;
+  }
+}
+
+#about-intro h5 {
+  text-align: center;
+}
+
+/*Responsive*/
+
+@media (max-width: 320px) {
+  #page-image,
+  #font-image,
+  #open-source-image,
+  #download-image,
+  #typing-image {
+    width: 100%;
+  }
+}
+
+@media (min-width: 60rem) {
+  #page-image,
+  #font-image,
+  #open-source-image,
+  #download-image,
+  #typing-image {
+    margin-right: 10px;
+  }
+
+  #page-image {
+    width: 25%;
+    float: left;
+  }
+
+  #font-image {
+    width: 40%;
+    float: right;
+  }
+
+  #typing-image {
+    width: 30%;
+    float: left;
+  }
+
+  #download-image {
+    width: 47%;
+    float: right;
+  }
+
+  #open-source-image {
+    width: 50%;
+    padding: 10px;
+  }
+
+  #open-source p {
+    color: #4e89ae;
+    font-weight: bold;
+  }
+
+  .enhanced {
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  #about-intro h2,
+  #features h3 {
+    color: #4e89ae;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 410px) {
+  #about-intro h2 {
+    font-size: 3rem;
+  }
+
+  #features h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 410px) and (max-width: 462px) {
+  #about-intro h2 {
+    font-size: 2.3rem;
+  }
+
+  #features h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 459px) and (max-width: 506px) {
+  #about-intro h2 {
+    font-size: 2.6rem;
+  }
+
+  #features h3 {
+    font-size: 2.1rem;
+  }
+}
