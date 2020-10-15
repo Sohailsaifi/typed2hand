@@ -293,7 +293,7 @@ footer {
 }
 
 .image-2 .profile-container::before {
-  background: url("../images/team/") no-repeat center;
+  background: url("../images/team/shobhit.jpg") no-repeat center;
   background-size: cover;
 }
 
