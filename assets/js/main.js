@@ -71,11 +71,11 @@ const maintainerSection = [
     imgclass: "image-1"
   },
   {
-    image: "assets/images/team/",
+    image: "assets/images/team/shobhit.jpg",
     name: "Shobhit Bhardwaj",
     title: "Developer",
     github: "",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/shobhit-bhardwaj-562719195",
     imgclass: "image-2"
   }
 ];
