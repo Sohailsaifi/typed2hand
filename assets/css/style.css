@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
   font-family: Montserrat;
   scroll-behavior: smooth;
-  --col-deepblue: #4478e3;
+  --col-deepblue: #004ade;
   position: relative;
 }
 a {
@@ -19,8 +19,8 @@ a {
 /* NAVBAR*/
 
 nav {
-  background-color: #7fcec5;
-  background-image: linear-gradient(315deg, #7fcec5 0%, #14557b 74%);
+  background-color: #00cfb7;
+  background-image: linear-gradient(to right, #001f2d, #004563, #003141);
   z-index: 2;
 }
 
@@ -102,7 +102,7 @@ nav {
 .title-image {
   width: 70%;
   margin: 5% 20% 5% 20%;
-  padding: 15px;
+  padding: 40px;
 }
 
 .home-section {
@@ -110,8 +110,8 @@ nav {
   width: 100%;
   height: 100%;
   background: #0f2027;
-  background: -webkit-linear-gradient(to right, #0f2027 #2c5364, #203a43);
-  background: linear-gradient(to right, #0f2027, #2c5364, #203a43);
+  background: -webkit-linear-gradient(to right, #0f2027 #004f70, #004e68);
+  background: linear-gradient(to right, #001f2d, #004563, #003141);
   overflow: hidden;
 }
 
@@ -209,7 +209,7 @@ section .wave.wave4 {
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #0d739eab;
+  background-color: #0074a5ab;
   transition: all 0.3s;
   z-index: -1;
 }
@@ -240,8 +240,8 @@ footer {
   left: 0;
   right: 0;
   z-index: 150;
-  background-color: #7fcec5;
-  background-image: linear-gradient(315deg, #7fcec5 0%, #14557b 74%);
+  background-color: #00c9b1;
+  background-image: linear-gradient(315deg, #00cab3 0%, #004973 74%);
   color: white;
   text-align: center;
   font-size: 1.2rem;
@@ -312,7 +312,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(315deg, #b17fce 0%, #6f147b 74%);
+  background: linear-gradient(315deg, #8200cd 0%, #6f147b 74%);
   transform: skew(30deg) translateX(125%);
   opacity: 0.9;
   transition: all 0.8s ease;
@@ -325,7 +325,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(315deg, #7fcec5 0%, #14557b 74%);
+  background: linear-gradient(315deg, #00d5bc 0%, #004d7a 74%);
   transform: skew(30deg) translateX(-125%);
   opacity: 0.9;
   transition: all 0.8s ease;
@@ -333,12 +333,12 @@ footer {
 
 .profile-container:hover .profile-wrapper::after {
   transform: skew(30deg) translateX(125%);
-  background: linear-gradient(315deg, #ab7fce 0%, #52147b 74%);
+  background: linear-gradient(315deg, #6f00ca 0%, #4a007b 74%);
 }
 
 .profile-container:hover .profile-wrapper::before {
   transform: skew(30deg) translateX(-125%);
-  background: linear-gradient(315deg, #ce7fb0 0%, #7b1450 74%);
+  background: linear-gradient(315deg, #d60084 0%, #85004e 74%);
 }
 
 /* Profile Card */
@@ -409,7 +409,7 @@ footer {
 }
 
 .profile-card .icons a:hover {
-  background-image: linear-gradient(315deg, #7fcec5 0%, #14557b 74%);
+  background-image: linear-gradient(315deg, #00d2ba 0%, #004d7a 74%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -471,13 +471,13 @@ footer {
 
 #about-intro h2,
 #features h3 {
-  color: #4e89ae;
+  color: #006db1;
   text-align: center;
   font-size: 2.5rem;;
 }
 
 #features h3 {
-  color: #4e89ae;
+  color: #0065a3;
   text-align: center;
 }
 
@@ -538,7 +538,7 @@ footer {
   }
 
   #open-source p {
-    color: #4e89ae;
+    color: #006bae;
     font-weight: bold;
   }
 
@@ -549,7 +549,7 @@ footer {
 
   #about-intro h2,
   #features h3 {
-    color: #4e89ae;
+    color: #006cae;
   }
 }
 
@@ -581,4 +581,9 @@ footer {
   #features h3 {
     font-size: 2.1rem;
   }
+}
+
+#font-size-select {
+  width: 100px;
+  padding: 0px 0px 0px 30px;
 }
