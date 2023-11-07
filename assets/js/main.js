@@ -69,14 +69,6 @@ const maintainerSection = [
     github: "https://github.com/Sohailsaifi",
     linkedin: "https://www.linkedin.com/in/sohail-saifi-794498154/",
     imgclass: "image-1"
-  },
-  {
-    image: "assets/images/team/shobhit.jpg",
-    name: "Shobhit Bhardwaj",
-    title: "Developer",
-    github: "",
-    linkedin: "https://www.linkedin.com/in/shobhit-bhardwaj-562719195",
-    imgclass: "image-2"
   }
 ];
 
